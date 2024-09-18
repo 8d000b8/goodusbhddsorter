@@ -33,23 +33,23 @@ Save the script as organize_files.ps1.
 Open PowerShell as an Administrator.
 Navigate to the directory where the script is saved:
 
-powershell
-
-Copy code
 cd C:\path\to\your\script
-Run the script with the following command:
-powershell
 
-Copy code
+Run the script with the following command:
+
 ./organize_files.ps1
+
 ⚡ Performance Considerations for Windows
+
 NTFS: Since the script is optimized for Windows (with native support for NTFS), there’s no need to worry about performance issues related to the filesystem. NTFS handles large numbers of files effectively.
 
 Multithreading: Although PowerShell doesn’t natively support multithreading like GNU Parallel, this script should be fast enough for most users. Advanced users can explore:
 
 Start-Job for running background jobs.
 PowerShell 7's ForEach-Object -Parallel for parallel processing, though this adds some complexity.
+
 🧩 What’s Next?
+
 This is just the v0.01a release of the script. Feel free to:
 
 Test it out.
